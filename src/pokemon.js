@@ -2,13 +2,15 @@ define([],
     () => {
         let pokemon = {
             type: 'pokemon',
-            data: () => ({
-                name: this.name,
-                type: this.type,
-                species: this.species,
-                height: this.height,
-                Weight: this.Weight
-            })
+            data() {
+                return {
+                    name: this.name,
+                    type: this.type,
+                    species: this.species,
+                    height: this.height,
+                    Weight: this.Weight
+                };
+            }
         };
 
         let create = function create({
