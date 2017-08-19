@@ -19,9 +19,9 @@ define([
             species: 'mouse',
             height: 0.41,
             Weight: 6.0
-        });
+        }).data();
 
-        assert.deepEqual(actual, expected, 'initial format should be equal');
+        assert.deepEqual(actual, expected, 'data should be equal');
     };
 
     const tester = [{
